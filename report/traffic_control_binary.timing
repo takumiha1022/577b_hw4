@@ -1,0 +1,46 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : traffic_control_binary
+Version: K-2015.06-SP5-5
+Date   : Sun Mar  9 13:59:29 2025
+****************************************
+
+Operating Conditions: typical   Library: gscl45nm
+Wire Load Model Mode: top
+
+  Startpoint: reset (input port)
+  Endpoint: ped_A_reg (rising edge-triggered flip-flop)
+  Path Group: default
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  reset (in)                               0.00       0.00 r
+  U172/Y (OR2X1)                           0.11       0.11 r
+  U47/Y (AOI21X1)                          0.04       0.15 f
+  U133/Y (BUFX2)                           0.04       0.18 f
+  U108/Y (AND2X1)                          0.04       0.22 f
+  U37/Y (AOI22X1)                          0.03       0.25 r
+  U126/Y (BUFX2)                           0.04       0.29 r
+  U113/Y (AND2X1)                          0.03       0.32 r
+  U114/Y (INVX1)                           0.02       0.33 f
+  ped_A_reg/D (DFFPOSX1)                   0.00       0.33 f
+  data arrival time                                   0.33
+
+  max_delay                                5.00       5.00
+  library setup time                      -0.06       4.94
+  data required time                                  4.94
+  -----------------------------------------------------------
+  data required time                                  4.94
+  data arrival time                                  -0.33
+  -----------------------------------------------------------
+  slack (MET)                                         4.61
+
+
+1
